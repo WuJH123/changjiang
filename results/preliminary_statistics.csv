@@ -1,0 +1,9 @@
+n_global,n_within_station_tide,p_global,p_within_station_tide,rho_global,rho_within_station_tide,test,x,y
+205,205,6.697616887061685e-12,3.196643386410354e-05,0.455597374595727,0.2861293798174419,resuspension_global,current_speed_m_s,ssc_g_l_mean
+205,205,8.302550237551414e-14,3.9931736757350296e-07,0.4904946037672883,0.3452196969117418,resuspension_bottom,current_speed_m_s,ssc_g_l_bottom
+175,175,0.37528077631748996,5.3280304223398526e-05,0.0674294670846395,0.3005150022391402,stratification_DO_gradient,salinity_psu_bottom_minus_surface,do_reported_bottom_minus_surface
+191,191,5.737951948367487e-41,6.596865793009625e-30,-0.7838288645539421,-0.7040423946173818,stratification_FDOM_gradient,salinity_psu_bottom_minus_surface,fdom_reported_bottom_minus_surface
+155,155,3.3933091199292326e-19,0.1581413448548024,0.6394605394605395,0.11391511714092359,SSC_FDOM,ssc_g_l_mean,fdom_reported_mean
+139,139,4.044601352782114e-06,0.02823603357094808,0.37962822288752845,0.18614325930559894,SSC_DO,ssc_g_l_mean,do_reported_mean
+3252,,1.387798710638244e-115,,0.3853055155999154,,HSQ2_bottom_speed_SSC,speed_m_s,ssc_g_l
+3252,,4.1261098273749975e-242,,-0.5367318104302666,,HSQ2_bottom_salinity_SSC,salinity_psu,ssc_g_l

@@ -1,0 +1,31 @@
+{
+  "xlsx_files": 14,
+  "stations_present": ["HSQ1", "HSQ2", "HSQ3", "HSQ4", "HSQ5", "HSQ7", "HSQ8", "HSQ9", "HSQ10", "HSQ11"],
+  "station_ids_absent_from_workbooks": ["HSQ6"],
+  "variable_station_coverage": {
+    "current_speed_m_s": ["HSQ1", "HSQ2", "HSQ3", "HSQ4", "HSQ5", "HSQ7", "HSQ8", "HSQ9", "HSQ10", "HSQ11"],
+    "salinity_psu": ["HSQ1", "HSQ2", "HSQ4", "HSQ5", "HSQ7", "HSQ9", "HSQ10", "HSQ11"],
+    "temperature_c": ["HSQ1", "HSQ2", "HSQ4", "HSQ5", "HSQ7", "HSQ9", "HSQ10", "HSQ11"],
+    "ssc_g_l": ["HSQ1", "HSQ2", "HSQ4", "HSQ5", "HSQ7", "HSQ9", "HSQ10", "HSQ11"],
+    "do_reported": ["HSQ1", "HSQ2", "HSQ4", "HSQ9", "HSQ11"],
+    "ph": ["HSQ2", "HSQ7"],
+    "chla_reported": ["HSQ1", "HSQ2", "HSQ4", "HSQ7", "HSQ9", "HSQ11"],
+    "fdom_reported": ["HSQ1", "HSQ2", "HSQ4", "HSQ7", "HSQ9", "HSQ11"]
+  },
+  "profile_long_rows": 30870,
+  "profile_hour_rows": 356,
+  "do_unit_status": "Not documented in the supplied DO workbook headers/metadata; no AOU conversion performed.",
+  "primary_scientific_guardrail": "Observational coupling/process consistency only; no definitive causal attribution.",
+  "key_process_results": {
+    "large_to_small_current_ratio_across_station_medians": 2.0163015792154866,
+    "large_to_small_profile_mean_ssc_ratio": 3.327409029426099,
+    "large_to_small_bottom_surface_ssc_ratio": 3.8928265827330786,
+    "large_to_small_bottom_surface_salinity_difference_ratio": 0.13895792170534718,
+    "current_vs_profile_mean_ssc_spearman_rho": 0.455597374595727,
+    "current_vs_profile_mean_ssc_within_station_tide_rho": 0.2861293798174419,
+    "salinity_gradient_vs_fdom_gradient_spearman_rho": -0.7838288645539421,
+    "salinity_gradient_vs_fdom_gradient_within_station_tide_rho": -0.7040423946173818,
+    "hsq2_bottom_current_vs_ssc_rho": 0.3853055155999154,
+    "hsq2_bottom_salinity_vs_ssc_rho": -0.5367318104302666
+  }
+}

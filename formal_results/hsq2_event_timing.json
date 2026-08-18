@@ -1,0 +1,8 @@
+{
+  "n_events": 17,
+  "onset_definition": "upward crossing of speed P75=0.820 m/s after prior-hour speed below median, >=0.2 m/s acceleration, >=4 h separation",
+  "median_ssc_peak_lag_h": 1.6666666666666667,
+  "iqr_ssc_peak_lag_h": [0.8333333333333334, 2.0],
+  "fraction_ssc_peak_0_to_2h": 0.7647058823529411,
+  "median_ssc_peak_over_baseline": 2.987308746869474
+}

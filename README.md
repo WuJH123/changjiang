@@ -21,7 +21,7 @@ The uploaded archive does **not** contain identical variables at every nominal s
 - Station IDs actually present: `HSQ1, HSQ2, HSQ3, HSQ4, HSQ5, HSQ7, HSQ8, HSQ9, HSQ10, HSQ11`.
 - `HSQ6` is absent from the supplied workbooks and from the supplied coordinate table, so the present dataset has **10 identifiable station IDs, not 11**.
 - Most profile campaigns are concentrated on **26–30 August 2023**, not a continuous one-month network record. The HSQ2 bottom deployment extends for about 11 days; the external tide/meteorology/discharge workbook covers a longer interval.
-- DO, Chl-a and FDOM workbook headers do not document units. The pipeline therefore retains them as `*_reported` and does not calculate AOU/oxygen saturation until units are verified.
+- DO, Chl-a and FDOM workbook headers do not document units. The analysis therefore retains them as `*_reported` and does not calculate AOU/oxygen saturation until units are verified.
 
 ## Strongest preliminary physical result
 
@@ -46,12 +46,12 @@ These are exploratory and not final inferential statistics:
 - SSC vs FDOM is strong globally but weak after within-station+tide centering, indicating substantial spatial/regime confounding;
 - the DO vertical response is not a simple monotonic stratification/deoxygenation signal in this preliminary pass, so an oxygen-depletion narrative should **not** be forced before unit verification and hierarchical modelling.
 
-## Run
+## Reproduce the core audit/contrast
 
 ```bash
-python src/hengsha_pipeline.py \
+python src/hengsha_core_repro.py \
   --zip "/path/to/2023八月横沙.zip" \
-  --out results
+  --out results_core
 ```
 
 Required Python packages:
@@ -62,13 +62,11 @@ scipy
 matplotlib
 ```
 
-The script intentionally parses `.xlsx` files using Python standard-library XML/ZIP support, avoiding dependence on workbook-specific desktop software.
+The core script intentionally parses `.xlsx` files using Python standard-library XML/ZIP support, avoiding dependence on workbook-specific desktop software. It reproduces the workbook audit, station coverage, the paired small-/large-tide salinity/SSC/current comparison, and a current–SSC screening analysis.
 
-## Main outputs
+## Versioned results
 
-- `results/data_inventory.csv`
-- `results/station_variable_coverage.csv`
-- `results/profile_hour_metrics.csv`
+- `results/analysis_summary.json`
 - `results/regime_contrast_summary.csv`
 - `results/daily_forcing_summary.csv`
 - `results/preliminary_statistics.csv`
@@ -76,9 +74,8 @@ The script intentionally parses `.xlsx` files using Python standard-library XML/
 - `results/hsq2_speed_ssc_lag.csv`
 - `results/preliminary_findings.md`
 - `results/publication_analysis_plan.md`
-- `figures/*.svg`
 
-`profile_long.csv` and the full aligned HSQ2 high-frequency table are generated locally by the pipeline but need not be versioned to reproduce the analysis.
+The full extended analysis bundle also contains harmonized long/hourly tables, aligned HSQ2 high-frequency data and SVG diagnostic figures; these larger derived artifacts are not required to understand the versioned scientific results.
 
 ## Publication guardrails
 

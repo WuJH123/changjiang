@@ -1,0 +1,3 @@
+model,response,predictor,n,n_stations,n_campaigns,edf,gcv,lambda_smooth,lambda_station,lambda_campaign,marginal_r2,conditional_r2
+ssc_from_current,log_ssc,speed,155,4,8,9.790641048586082,0.06877073133677475,1000.0,1.0,1.0,0.41626205973209784,0.684015085229263
+stratification_from_current,log_strat,speed,155,4,8,10.029941938695826,0.3698086618275744,3.1622776601683795,100.0,4.6415888336127775,0.5134243823369953,0.5886101533990629

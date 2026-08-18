@@ -1,0 +1,34 @@
+{
+  "do_default_unit_interpretation": "µmol/L (RBR physical output; AOU derived with Garcia & Gordon/TEOS-10 oxygen solubility)",
+  "paired_core": {
+    "current_large_over_small_site_ratios": [1.7845601436265706, 1.8484848484848484, 2.315340909090909, 2.31734693877551],
+    "ssc_large_over_small_site_ratios": [1.7022718128360903, 2.216078639589656, 5.047589772008285, 10.896251063316807],
+    "strat_large_over_small_site_ratios": [0.25118796198521653, 0.33978940100120836, 0.08863185425685428, 0.12919738763890012],
+    "exact_p_floor_n4": "two-sided sign-flip p=0.125 when all 4 sites are concordant"
+  },
+  "gamm": {
+    "ssc_marginal_r2": 0.41626205973209784,
+    "ssc_conditional_r2": 0.684015085229263,
+    "stratification_marginal_r2": 0.5134243823369953,
+    "stratification_conditional_r2": 0.5886101533990629
+  },
+  "interaction": {
+    "fdom_beta": -1.392464317803863,
+    "fdom_p_cluster": 0.0032653681366682833,
+    "fdom_r2": 0.5850039952696469,
+    "aou_p_cluster": 0.8294900732199755,
+    "chla_p_cluster": 0.049347933627184884
+  },
+  "transition": {
+    "ssc_stable_threshold": false,
+    "stratification_stable_threshold": false
+  },
+  "hsq2": {
+    "n_events": 17,
+    "median_ssc_peak_lag_h": 1.6666666666666667,
+    "iqr_ssc_peak_lag_h": [0.8333333333333334, 2.0],
+    "fraction_ssc_peak_0_to_2h": 0.7647058823529411,
+    "median_ssc_peak_over_baseline": 2.987308746869474
+  },
+  "paper_judgement": "Promising Water Research process-paper core, but not a fully locked claim because only one small/large tide campaign pair is available. The defensible main story is a spring–neap tidal-energy-controlled stratified ↔ mixed-resuspension state transition with FDOM vertical reorganization; universal thresholds and simple deoxygenation are not supported."
+}

@@ -1,0 +1,9 @@
+metric,label,unit,n_station_pairs,median_difference_large_minus_small,bootstrap_95_low,bootstrap_95_high,exact_signflip_p_two_sided,wilcoxon_exact_p_two_sided,all_stations_same_direction,median_geometric_ratio_large_over_small
+current_speed_m_s,Current speed,m/s,4,0.4135833333333332,0.27999999999999997,0.5379166666666666,0.125,0.125,True,
+profile_mean_ssc_g_L,Profile-mean SSC,g/L,4,,1.7022718128360903,10.896251063316809,0.125,0.125,True,3.3445262557137716
+bottom_ssc_g_L,Bottom SSC,g/L,4,,1.714391316934467,9.364122863345893,0.125,0.125,True,4.136532596066958
+vertical_ssc_gradient_g_L,|bottom-surface SSC|,g/L,4,,2.0920662145803774,14.962780367620264,0.125,0.125,True,5.572816463290826
+salinity_stratification,|bottom-surface salinity|,PSS-78,4,,0.0886318542568543,0.33978940100120836,0.125,0.125,True,0.180146686050089
+fdom_gradient,FDOM bottom-surface,instrument output,3,4.191999999999999,0.8725,10.094,0.25,0.25,True,
+chla_gradient,Chl-a bottom-surface,µg/L,3,40.924,1.6235,53.846,0.25,0.25,True,
+aou_gradient,AOU bottom-surface,µmol/L,3,45.526185787745675,-50.79949114929265,150.98357662519803,0.75,0.75,False,
